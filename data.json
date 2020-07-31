@@ -1,0 +1,1 @@
+{'name': 'qradar', 'type': 'source', 'pid': 'Z|!o^`>J', 'fields': {'common': ['ip'], 'credentials': ['token']}, 'runner_script': 'qradar/qradar_parham_getter.py', 'version': '7.3.0'}
