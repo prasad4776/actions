@@ -49,7 +49,12 @@ jobs:
         pytest
     - name: File Creation
       run: |
-        echo '"a":"b"' > data.json
+        echo '{"name": "qradar","type": "source","pid": "kSu8Iy9g",
+          "fields": {"common": ["ip"],"credentials": ["token"],
+        },
+    "runner_script": "qradar/qradar_parham_getter.py",
+    "version": "7.3.0",
+  }' > data.json
         cat data.json
     - name: Deploy to Heroku
       env:
